@@ -2,3 +2,6 @@
 /.vs
 __pycache__
 /temp
+/build/run
+/dist
+*.spec
