@@ -14,17 +14,18 @@ pip install -r requirements.txt
 ```
 
 - 下载gocq, 像分布式客户端那样设置好`正向ws`端口和`HTTP`端口
-- 打开`base_settings.py`, 填入您的设置
+- 打开`config.json`, 填入您的设置
 
-```python
-class CQhttp:
-    ip = "127.0.0.1"
-    cq_ws_port = 11415  # gocq 正向ws端口
-    cq_http_port = 1988  # gocq HTTP端口
-
-
-lolicon_pixiv_proxy = "i.pixiv.re"  # lolicon api的反代地址
-setu_proxy_url = ""  # 图片获取/下载代理, 例: http://127.0.0.1:10087, 没有请留空
+```javascript
+{
+  "cq": {
+    "ip": "127.0.0.1",
+    "cq_ws_port": 11415,  // gocq 正向ws端口
+    "cq_http_port": 1988  // gocq HTTP端口
+  },
+  "lolicon_pixiv_proxy": "i.pixiv.re",  // lolicon api的反代地址
+  "setu_proxy_url": ""  // 图片获取/下载代理, 例: http://127.0.0.1:10087, 没有请留空
+}
 ```
 
 - 运行`run.py`即可

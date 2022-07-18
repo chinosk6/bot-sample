@@ -1,0 +1,9 @@
+{
+  "cq": {
+    "ip": "127.0.0.1",
+    "cq_ws_port": 11415,
+    "cq_http_port": 1988
+  },
+  "lolicon_pixiv_proxy": "i.pixiv.re",
+  "setu_proxy_url": ""
+}
