@@ -20,7 +20,7 @@ def lolicon(r18=0, tags=None):
     if tags:
         data["tag"] = [i.strip() for i in tags]
     proxies = {'http': setu_proxy_url, 'https': setu_proxy_url} if setu_proxy_url else None
-    response = requests.request("GET", url, headers={'Content-Type': 'application/json'}, data=json.dumps(data),
+    response = requests.request("POST", url, headers={'Content-Type': 'application/json'}, data=json.dumps(data),
                                 timeout=30, proxies=proxies)
     # print(data["tag"], response.text)
     return response.text
